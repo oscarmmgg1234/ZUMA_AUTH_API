@@ -29,5 +29,14 @@ server.post("/signin", (req,res)=>{
 
 })
 
+server.get("/public/juan_image", (req, res)=>{
+    res.sendFile(path.join(__dirname,"public/assets/images/screen.png"))
+})
+
+server.get("/public/jennifer_image", (req, res)=>{
+    res.sendFile(path.join(__dirname,"public/assets/images/jennifer.png"))
+})
+
+
 
 sslServer.listen(env.server_port,()=>{console.log(`Server listening on port ${env.server_port}`)})
