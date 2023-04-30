@@ -16,7 +16,7 @@ const sslOptions = {
     cert: fs.readFileSync(path.join(__dirname, 'cert', 'cert.pem')),
   };
   
-const sslServer = https.createServer(sslOptions, server);
+//const sslServer = https.createServer(sslOptions, server);
   
 server.post("/signin", (req,res)=>{
     try{
@@ -39,4 +39,4 @@ server.get("/public/jennifer_image", (req, res)=>{
 
 
 
-sslServer.listen(env.server_port,()=>{console.log(`Server listening on port ${env.server_port}`)})
+server.listen(env.server_port,()=>{console.log(`Server listening on port ${env.server_port}`)})
