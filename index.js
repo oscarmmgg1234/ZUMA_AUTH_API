@@ -29,12 +29,12 @@ server.post("/signin", (req,res)=>{
 
 })
 
-server.get("/public/juan_image", (req, res)=>{
-    res.sendFile(path.join(__dirname,"public/assets/images/screen.png"))
+server.get("/public/emp_boss", (req, res)=>{
+    res.sendFile(path.join(__dirname,"public/assets/images/emp_boss.jpg"))
 })
 
-server.get("/public/jennifer_image", (req, res)=>{
-    res.sendFile(path.join(__dirname,"public/assets/images/jennifer.png"))
+server.get("/public/emp_jen", (req, res)=>{
+    res.sendFile(path.join(__dirname,"public/assets/images/emp_00001.jpg"))
 })
 
 
